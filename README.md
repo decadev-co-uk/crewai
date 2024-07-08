@@ -1,4 +1,4 @@
-# Week 9.1: CrewAI
+# Week 8.1: CrewAI
 
 ## Introduction
 CrewAI is an agentic framework built on top of LangChain that aims to build agents more quickly. CrewAI abstracts the building of agentic workflows, requiring less coding logic while guiding the prompting process.
