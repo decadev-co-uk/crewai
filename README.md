@@ -5,7 +5,7 @@ CrewAI is an agentic framework built on top of LangChain that aims to build agen
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
-- You have installed Python 3.6+.
+- You have installed Python 3.6.x - 3.11.x
 
 ## Usage
 
