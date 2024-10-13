@@ -5,7 +5,8 @@ CrewAI is an agentic framework built on top of LangChain that aims to build agen
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
-- You have installed Python 3.6.x - 3.11.x
+- You have a Docker setup (preferred)
+- You have Python 3.11.0 or higher installed (local environment setup)
 
 ## Usage
 
@@ -16,4 +17,3 @@ To run any examples, navigate into the specific directory, install poetry, and r
 2. Run `poetry install --no-root` in the project directory.
 3. Start the poetry shell with `poetry shell`.
 4. Run the script with `python main.py`.
-

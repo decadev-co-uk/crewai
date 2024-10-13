@@ -35,9 +35,9 @@ class TripAgents():
   def travel_concierge(self):
     return Agent(
         role='Amazing Travel Concierge',
-        goal="""Create the most amazing travel itineraries with budget and 
+        goal="""Create the most amazing travel itineraries with budget and
         packing suggestions for the city""",
-        backstory="""Specialist in travel planning and logistics with 
+        backstory="""Specialist in travel planning and logistics with
         decades of experience""",
         tools=[
             SearchTools.search_internet,

@@ -3,8 +3,11 @@ from textwrap import dedent
 from trip_agents import TripAgents
 from trip_tasks import TripTasks
 
+import os
 from dotenv import load_dotenv
 load_dotenv()
+
+os.environ["OPENAI_MODEL_NAME"] = "gpt-4o-mini"
 
 class TripCrew:
 
@@ -72,7 +75,7 @@ if __name__ == "__main__":
     dedent("""
       What are some of your high level interests and hobbies?
     """))
-  
+
   trip_crew = TripCrew(location, cities, date_range, interests)
   result = trip_crew.run()
   print("\n\n########################")

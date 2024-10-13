@@ -4,8 +4,11 @@ from textwrap import dedent
 from stock_analysis_agents import StockAnalysisAgents
 from stock_analysis_tasks import StockAnalysisTasks
 
+import os
 from dotenv import load_dotenv
 load_dotenv()
+
+os.environ["OPENAI_MODEL_NAME"] = "gpt-4o-mini"
 
 class FinancialCrew:
   def __init__(self, company):
@@ -49,7 +52,7 @@ if __name__ == "__main__":
     dedent("""
       What is the company you want to analyze?
     """))
-  
+
   financial_crew = FinancialCrew(company)
   result = financial_crew.run()
   print("\n\n########################")

@@ -1,0 +1,26 @@
+services:
+  stock_analysis:
+    build:
+      context: ./stock_analysis
+      dockerfile: Dockerfile
+    container_name: stock_analysis_service
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./stock_analysis/.env
+    volumes:
+      - ./stock_analysis:/app
+    command: ["poetry", "run", "python", "main.py"]
+
+  trip_planner:
+    build:
+      context: ./trip_planner
+      dockerfile: Dockerfile
+    container_name: trip_planner_service
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./trip_planner/.env
+    volumes:
+      - ./trip_planner:/app
+    command: ["poetry", "run", "python", "main.py"]
