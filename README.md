@@ -10,7 +10,7 @@ CrewAI is an agentic framework built on top of LangChain that aims to build agen
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 - Docker Desktop (recommended for local setup)
-- Python 3.11.0 or greater (local setup with poetry)
+- Python 3.11.0 or greater (local setup with virtual environment)
 - You'll need a Serper API key [HERE](https://serper.dev/)
 - You'll need a Browserless API key [HERE](https://www.browserless.io/)
 - You'll need an SEC API key [HERE](https://sec-api.io/)
@@ -50,4 +50,4 @@ If you prefer to run the examples locally:
 5. In the application directory you want to run (`stock_analysis` or `trip_planner`), run the script with `python main.py`
 
 ## Need Help?
-Reach out to the course instructor or learning assistant
+Reach out to the learning assistants
