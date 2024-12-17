@@ -39,7 +39,7 @@ class TripCrew:
       self.date_range
     )
     plan_task = tasks.plan_task(
-      travel_concierge_agent, 
+      travel_concierge_agent,
       self.origin,
       self.interests,
       self.date_range
